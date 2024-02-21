@@ -28,13 +28,13 @@ This is a Miro clone built using Next.js, LiveBlock, Convex, and Clerk. Miro is 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/miro-clone.git
+   git clone https://github.com/senthil-developer/miro-clone.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd miro-clone
+   cd miro
    npm install
    ```
 
@@ -43,11 +43,14 @@ This is a Miro clone built using Next.js, LiveBlock, Convex, and Clerk. Miro is 
    Create a `.env.local` file in the root directory and add the following variables:
 
    ```plaintext
-   LIVEBLOCK_API_KEY=your_liveblock_api_key
-   CLERK_FRONTEND_API_KEY=your_clerk_frontend_api_key
+   LIVEBLOCKS_KEY=your_liveblock_api_key
+   CLERK_SECRET_KEY=your_clerk_key
+   CONVEX_DEPLOYMENT=your_convex_dev_key
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+   NEXT_PUBLIC_CONVEX_URL=your_NEXT_PUBLIC_CONVEX_URL
    ```
 
-   Replace `your_liveblock_api_key` and `your_clerk_frontend_api_key` with your actual API keys.
+   Replace `YOUR_KEY` with your actual API keys.
 
 4. Run the development server:
 
@@ -67,13 +70,5 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 4. Commit your changes (`git commit -am 'Add new feature'`).
 5. Push to the branch (`git push origin feature/new-feature`).
 6. Create a new Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to adjust and expand upon this template according to your project's specific features and requirements.
 
 Credits - [MIRO CLONE BY ANTONIO](https://youtu.be/ADJKbuayubE)

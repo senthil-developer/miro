@@ -19,18 +19,18 @@ const Section = () => {
     },
   ];
   return (
-    <div className="flex-col-center w-full overflow-x-hidden mx-[20px] gap-5">
+    <div className="flex flex-col w-full overflow-x-hidden mx-auto gap-5 items-center">
       {items.map((item, index) => (
         <div
-          className="flex flex-col md:flex-row-reverse w-full justify-center items-center gap-5 mx-[20px]"
+          className="flex flex-col md:flex-row-reverse w-full md:justify-evenly items-center"
           key={index}
         >
-          <div className=" w-[200px] md:w-[327px] md:h-[218px] relative">
+          <div className="relative w-[350px] h-[240px] sm:w-[450px] sm:h-[300px] md:w-[400px] lg:w-[600px] lg:h-[370px]">
             <Image src={item.img} fill alt={item.title} />
           </div>
-          <div className="w-full md:w-[50%] text-wrap">
-            <h3>{item.title}</h3>
-            <p>{item.para}</p>
+          <div className="md:w-[40%] w-[75%] text-start gap-4 md:justify-center flex flex-col lg:w-[30%]">
+            <h3 className="text-xl">{item.title}</h3>
+            <p className="text-lg">{item.para}</p>
           </div>
         </div>
       ))}
