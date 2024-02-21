@@ -9,7 +9,6 @@ import UserInfo from "@/components/UserInfo";
 import InfiniteScroll from "@/components/InfiniteScroll";
 import { SignInButton, useUser } from "@clerk/nextjs";
 import Section from "@/components/Section";
-import { Metadata } from "next";
 import FooterMainPage from "@/components/Footer";
 
 export const HomePage = () => {
@@ -23,7 +22,7 @@ export const HomePage = () => {
 
     requestAnimationFrame(raf);
   }, []);
-  const user = useUser();
+  const { user } = useUser();
   return (
     <main className="h-full w-full bg-[#fbf7ee]">
       <section className="w-full flex items-center justify-center mx-auto py-2 fixed top-0 bg-white z-10 border-[#cccbc8] border-b">
